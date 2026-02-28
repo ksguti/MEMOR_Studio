@@ -1,7 +1,7 @@
-# ![MEMOR Studio icono](favicon.ico.png) MEMOR Studio  
+# MEMOR Studio  
 **Creando universos, no solo proyectos**
 
-![MEMOR Studio](img/Logo MEMOR Studio4x.png)
+![MEMOR Studio](img/Logo_MEMOR_Studio4x.png)
 ---
 
 ## 🚀 Bienvenido a MEMOR Studio
@@ -47,8 +47,8 @@ Nos especializamos en **transformar ideas en mundos jugables**, creando comunida
 
 ## 🖼️ Galería de Proyectos
 
-![MEMOR Studio](img/banner/IS2 1500x500 Banner.png)
+![MEMOR Studio galeria 1](img/banner/IS2 1500x500 Banner.png)
 
-![MEMOR Studio](img/banner/OSD Banner 1500x500.png)
+![MEMOR Studio galeria 2](img/banner/OSD Banner 1500x500.png)
 
-![MEMOR Studio](img/banners/Banner 1500x500 IS2I.png)
+![MEMOR Studio galeria 3](img/banners/Banner 1500x500 IS2I.png)
