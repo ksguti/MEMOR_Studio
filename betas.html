@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Inscripción Beta | MEMOR Studio</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/betas.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+
+  <body class="beta-bg">
+    <div class="page-wrapper">
+      <header class="nav">
+        <div class="nav-top">
+          <div class="logo">
+            <img src="icon/iconotransp.png" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="perfil.html" class="btn primary">Perfil</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="beta-container">
+        <div class="beta-card">
+          <h1>Inscripción para Betas & Eventos</h1>
+          <p class="beta-desc">
+            Completa el formulario para participar en betas privadas y eventos
+            oficiales de MEMOR Studio.
+          </p>
+
+          <form id="betaForm">
+            <div class="field">
+              <label>ID de Discord</label>
+              <input
+                id="discordId"
+                type="text"
+                required
+                placeholder="123456789012345678"
+              />
+            </div>
+
+            <div class="field">
+              <label>Usuario de Discord</label>
+              <input
+                id="discordUser"
+                type="text"
+                required
+                placeholder="Usuario#0001"
+              />
+            </div>
+
+            <div class="field">
+              <label>Usuario de Minecraft</label>
+              <input
+                id="minecraftUser"
+                type="text"
+                required
+                placeholder="Steve123"
+              />
+            </div>
+
+            <div class="field">
+              <label>País y zona horaria</label>
+              <input
+                id="country"
+                type="text"
+                required
+                placeholder="Ecuador (GMT-5)"
+              />
+            </div>
+
+            <div class="field">
+              <label>Correo electrónico</label>
+              <input
+                id="email"
+                type="email"
+                required
+                placeholder="correo@email.com"
+              />
+            </div>
+
+            <div class="field">
+              <label
+                >Dinos tu experiencia con mods en miencraft y responde esta
+                pregunta ¿Cómo conociste MEMOR Studio?</label
+              >
+              <textarea
+                id="source"
+                required
+                placeholder="Discord, YouTube, amigos..."
+              ></textarea>
+            </div>
+
+            <div class="field switch">
+              <span class="switch-label">¿Tienes Minecraft Premium?</span>
+              <label class="switch-toggle">
+                <input type="checkbox" id="premiumCheck" />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar inscripción</button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer">© MEMOR Studio</footer>
+    </div>
+
+    <script type="module" src="js/betas.js"></script>
+
+    <script>
+      anime({
+        targets: ".beta-card",
+        opacity: [0, 1],
+        translateY: [40, 0],
+        duration: 900,
+        easing: "easeOutExpo",
+      });
+    </script>
+  </body>
+</html>

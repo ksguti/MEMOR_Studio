@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord | MEMOR Studio Club</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/discord.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <aside class="social-sidebar">
+        <a href="https://www.youtube.com/@MEMOR_StudioMC" target="_blank"
+          ><img src="icon/youtube.svg" alt=""
+        /></a>
+        <a href="... " target="_blank"
+          ><img src="icon/discord.svg" alt=""
+        /></a>
+        <a href="https://x.com/Memor_Studio" target="_blank"
+          ><img src="icon/x.svg" alt=""
+        /></a>
+        <a href="https://www.tiktok.com/@memor_studio" target="_blank"
+          ><img src="icon/tiktok.svg" alt=""
+        /></a>
+      </aside>
+
+      <header class="nav" id="nav">
+        <div class="nav-top">
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="logo">
+            <img src="icon/iconotransp.png" alt="Logo" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="perfil.html" class="btn primary">Perfil</a>
+          </div>
+        </div>
+
+        <div class="card-container" id="cardContainer" aria-hidden="true">
+          <div class="card">
+            <h3>Comunidad</h3>
+            <a href="# LInk de discord"
+              >➤ Discord de MEMOR Studio</a
+            >
+            <a href="ranking.html">➤ Ranking</a>
+          </div>
+          <div class="card">
+            <h3>Acerca</h3>
+            <a href="integrantes.html">➤ Integrantes</a>
+            <a href="colaboradores.html">➤ Colaboradores</a>
+          </div>
+          <div class="card">
+            <h3>Cuenta</h3>
+            <a href="login.html">➤ Login / Registro</a>
+            <a href="perfil.html">➤ Perfil</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="discord-page">
+        <section class="page-title">
+          <div class="page-title-left">
+            <h1>💬 Discord del Estudio</h1>
+            <p class="muted">
+              MEMOR Studio Club — comunidad oficial, soporte, eventos y avisos
+            </p>
+          </div>
+
+          <div
+            class="pill-status"
+            id="serverStatusPill"
+            title="Estado del widget"
+          >
+            <span class="dot" id="serverDot"></span>
+            <span id="serverStatusText">Cargando...</span>
+          </div>
+        </section>
+
+        <section class="server-details">
+          <div class="server-details-head">
+            <h2>Detalles del servidor</h2>
+
+            <a
+              class="btn ghost details-join"
+              href=" #link del discord"
+              target="_blank"
+              rel="noopener"
+            >
+              Unirse rápido
+            </a>
+          </div>
+
+          <div class="details-grid">
+            <div class="detail-card">
+              <span class="k">Servidor</span>
+              <span class="v" id="srvName">Cargando...</span>
+            </div>
+
+            <div class="detail-card">
+              <span class="k">En línea</span>
+              <span class="v" id="srvOnline">—</span>
+            </div>
+
+            <div class="detail-card">
+              <span class="k">Canales</span>
+              <span class="v" id="srvChannels">—</span>
+            </div>
+
+            <div class="detail-card">
+              <span class="k">Invitación</span>
+              <span class="v" id="srvInvite">—</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="discord-main">
+          <div class="left-panel">
+            <div class="mini-carousel" id="miniCarousel">
+              <div class="mini-track" id="miniTrack">
+                <div class="mini-slide">
+                  <img src="img/discordimg1.jpg" alt="Imagen Discord 1" />
+                </div>
+                <div class="mini-slide">
+                  <img src="img/discordimg2.png" alt="Imagen Discord 2" />
+                </div>
+                <div class="mini-slide">
+                  <img src="img/discordimg3.jpg" alt="Imagen Discord 3" />
+                </div>
+              </div>
+
+              <div
+                class="mini-dots"
+                id="miniDots"
+                aria-label="Navegación de imágenes"
+              >
+                <button
+                  type="button"
+                  class="active"
+                  aria-label="Imagen 1"
+                ></button>
+                <button type="button" aria-label="Imagen 2"></button>
+                <button type="button" aria-label="Imagen 3"></button>
+              </div>
+            </div>
+
+            <div class="compact-block">
+              <div class="title-row">
+                <h2>📌 ¿Qué hay dentro?</h2>
+                <span class="pill">Lo más importante</span>
+              </div>
+
+              <p class="muted compact-desc">
+                Al entrar verás categorías y canales organizados. Aquí tienes lo
+                principal:
+              </p>
+
+              <ul class="compact-list">
+                <li>
+                  <span class="li-ico">🛠️</span> Soporte técnico para la web
+                  (errores, bugs, perfil, ranking)
+                </li>
+                <li>
+                  <span class="li-ico">🎫</span> Ticket: resolución privada y
+                  rápida con el staff
+                </li>
+                <li>
+                  <span class="li-ico">🚀</span> Eventos y betas: anuncios,
+                  inscripción, horarios y acceso
+                </li>
+                <li>
+                  <span class="li-ico">🤖</span> Bot oficial: comandos, roles y
+                  automatizaciones
+                </li>
+                <li>
+                  <span class="li-ico">💬</span> Comunidad activa: gaming,
+                  Minecraft y soporte entre miembros
+                </li>
+                <li>
+                  <span class="li-ico">🏆</span> Ranking y progresión: niveles,
+                  puntos e insignias
+                </li>
+              </ul>
+
+              <div class="split-line"></div>
+
+              <div class="join-row">
+                <div class="join-hint">
+                  Entra y revisa todo el servidor desde Discord.
+                </div>
+                <a
+                  class="btn primary join-btn"
+                  id="joinBtn"
+                  href=" .. "
+                  target="_blank"
+                  rel="noopener"
+                >
+                  🚀 Unirse
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-panel">
+            <div class="widget-wrap">
+              <iframe
+                src=". . . "
+                allowtransparency="true"
+                frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                title="Widget Discord MEMOR Studio Club"
+              ></iframe>
+            </div>
+
+            <div class="channels-box">
+              <h3>Salas destacadas</h3>
+              <div class="channels-list" id="channelsList">
+                <div class="channel-row">
+                  <div class="channel-left">
+                    <span class="hash">#</span>
+                    <span class="channel-name">Cargando...</span>
+                  </div>
+                  <span class="channel-users">—</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          © <span id="year"></span> MEMOR Studio — Todos los derechos
+          reservados.
+        </footer>
+      </main>
+    </div>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/discord.js" defer></script>
+
+    <script>
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico.png" />
+    <title>Perfil público | MEMOR Studio</title>
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/perfil.css" />
+
+    <style>
+      .public-note {
+        margin-top: 8px;
+        color: #9938e99d;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="perfil">
+      <div class="profile-banner">
+        <img id="banner" src="img/banners/default.png" alt="Banner" />
+      </div>
+
+      <div class="perfil-card">
+        <div class="profile-header">
+          <div class="avatar-wrapper">
+            <img id="skin" class="avatar" alt="Skin Minecraft" />
+            <img id="premiumBadge" class="premium-badge" alt="Premium" />
+          </div>
+          <div class="profile-main-info">
+            <h2 id="fullName">Cargando Nombre Completo</h2>
+
+            <div class="discord-status">
+              <span id="discord-text">Cargando estado...</span>
+            </div>
+            <div class="profile-actions">
+              <button
+                id="downloadSkinBtn"
+                class="btn ghost"
+                style="display: none"
+              >
+                Descargar skin
+              </button>
+
+              <button id="goRankingBtn" class="btn primary">Ranking</button>
+
+              <button id="mcNameBtn" class="btn ghost">
+                Nombre de MC:<span id="minecraftName"></span>
+              </button>
+            </div>
+
+            <div class="public-note">
+              Nota: Para ver el Ranking debes tener iniciado sesion en tu cuenta
+            </div>
+          </div>
+        </div>
+
+        <div class="perfil-stats">
+          <div class="stat-box">
+            <span>Puntos</span>
+            <p id="points"></p>
+          </div>
+
+          <div class="stat-box">
+            <span>Advertencias</span>
+            <p id="warns"></p>
+          </div>
+
+          <div class="stat-box highlight">
+            <span>Rol</span>
+            <p id="userRole"></p>
+          </div>
+        </div>
+
+        <div class="perfil-content">
+          <section class="perfil-section">
+            <h3>Información del jugador</h3>
+            <div class="meta">
+              <span>🎂 <strong id="birthDate"></strong></span>
+            </div>
+          </section>
+
+          <section class="perfil-section">
+            <h3>Insignias</h3>
+            <div class="badges"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/perfil-publico.js"></script>
+  </body>
+</html>

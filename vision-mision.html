@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visión y Misión | MEMOR Studio</title>
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/visionMEMOR.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      defer
+    ></script>
+
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <aside class="social-sidebar">
+        <a href="https://www.youtube.com/@MEMOR_StudioMC" target="_blank"
+          ><img src="icon/youtube.svg" alt=""
+        /></a>
+        <a href=". . ." target="_blank"
+          ><img src="icon/discord.svg" alt=""
+        /></a>
+        <a href="https://x.com/Memor_Studio" target="_blank"
+          ><img src="icon/x.svg" alt=""
+        /></a>
+        <a href="https://www.tiktok.com/@memor_studio" target="_blank"
+          ><img src="icon/tiktok.svg" alt=""
+        /></a>
+      </aside>
+
+      <header id="nav" class="nav">
+        <div class="nav-top">
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-expanded="false"
+            aria-controls="cardContainer"
+          >
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="logo">
+            <img src="icon/iconotransp.png" alt="Logo" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="perfil.html" class="btn primary">Ver perfil</a>
+          </div>
+        </div>
+
+
+        <div class="card-container" id="cardContainer" aria-hidden="true">
+          <div class="card">
+            <h3>Proyectos</h3>
+            <a href="launcher.html">➤ Launcher</a>
+            <a href="modpacks.html">➤ Modpacks</a>
+          </div>
+
+          <div class="card">
+            <h3>Acerca de MEMOR Studio</h3>
+            <a href="integrantes.html">➤ Integrantes</a>
+            <a href="colaboradores.html">➤ Colaboradores</a>
+          </div>
+
+          <div class="card">
+            <h3>Comunidad</h3>
+            <a href="discord.html">➤ Discord MEMOR Studio Club</a>
+            <a href="login.html">➤ Login / Registro</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="vm-hero reveal">
+        <div class="vm-grid">
+  
+          <div class="vm-logo reveal">
+
+            <img src="img/Negativo@4x.png" alt="Logo MEMOR Studio" />
+          </div>
+
+          <div class="vm-text reveal">
+            <h1 class="vm-title">Visión y Misión de MEMOR Studio</h1>
+            <p class="vm-sub">
+              Lo que construimos no son solo proyectos: son universos con
+              identidad, comunidad y experiencia.
+            </p>
+
+            <div class="vm-quote reveal">
+              <p>
+                “En MEMOR Studio no entregamos solo archivos; entregamos
+                soluciones visuales estratégicas que construyen marcas, conectan
+                comunidades y cuentan historias que perduran en la mente y
+                corazón del público.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion reveal">
+        <h2>Visión</h2>
+        <p class="muted" style="line-height: 1.6; max-width: 80ch">
+          Ser el estudio de referencia internacional para la creación de
+          experiencias inmersivas en Minecraft, reconocido por innovar
+          constantemente los límites del juego y por construir las comunidades
+          de jugadores más apasionantes y engaged del ecosistema.
+        </p>
+      </section>
+
+      <section class="seccion reveal">
+        <h2>Misión</h2>
+        <p class="muted" style="line-height: 1.6; max-width: 80ch">
+          Dar vida a universos imaginarios a través de experiencias en Minecraft
+          que fusionen la narrativa, el diseño y la tecnología. Nos
+          especializamos en transformar ideas en mundos jugables, creando
+          comunidades y momentos memorables donde la creatividad y la aventura
+          no tienen límites.
+        </p>
+      </section>
+
+      <footer class="footer">
+        © <span id="year"></span> MEMOR Studio — Todos los derechos reservados.
+      </footer>
+    </div>
+
+    <script type="module" src="js/firebase.js"></script>
+  </body>
+</html>

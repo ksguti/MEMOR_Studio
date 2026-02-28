@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranking | MEMOR Studio</title>
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/ranking.css" />
+  </head>
+  <body>
+    <section class="ranking-container">
+      <header class="nav">
+        <div class="nav-top">
+          <div class="logo">
+            <img src="icon/iconotransp.png" alt="" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="perfil.html" class="btn primary">Perfil</a>
+          </div>
+        </div>
+      </header>
+
+      <header class="ranking-header">
+        <h1>🏆 Ranking</h1>
+        <div class="ranking-controls">
+          <input
+            id="searchInput"
+            placeholder="Buscar por Minecraft, nombre o UID..."
+          />
+          <div class="buttons">
+            <button id="btnTop" class="active">Top 5</button>
+            <button id="btnGlobal">Global</button>
+          </div>
+        </div>
+      </header>
+
+      <div id="loginGate" class="login-gate hidden">
+        <h2>🔒 Inicia sesión para ver el ranking</h2>
+        <p>
+          El ranking completo solo está disponible para usuarios con sesión
+          activa.
+        </p>
+        <button id="goLoginBtn" class="btn primary">Ir a iniciar sesión</button>
+      </div>
+      <div id="rankingList" class="ranking-list"></div>
+
+      <div id="pagination" class="pagination hidden">
+        <button id="prevPage">◀</button>
+        <span id="pageInfo"></span>
+        <button id="nextPage">▶</button>
+      </div>
+    </section>
+
+    <aside class="social-sidebar">
+      <a href="https://www.youtube.com/@MEMOR_StudioMC" target="_blank"
+        ><img src="icon/youtube.svg" alt=""
+      /></a>
+      <a href=". . ." target="_blank"
+        ><img src="icon/discord.svg" alt=""
+      /></a>
+      <a href="https://x.com/Memor_Studio" target="_blank"
+        ><img src="icon/x.svg" alt=""
+      /></a>
+      <a href="https://www.tiktok.com/@memor_studio" target="_blank"
+        ><img src="icon/tiktok.svg" alt=""
+      /></a>
+    </aside>
+
+    <div id="rankingModal" class="ranking-modal hidden">
+      <div class="modal-overlay"></div>
+
+      <div class="modal-card">
+        <button class="close" id="closeModal">✕</button>
+
+        <div class="modal-header">
+          <img id="modalBanner" class="modal-banner" alt="" />
+          <img id="modalSkin" class="modal-skin" alt="" />
+        </div>
+
+        <div class="modal-body">
+          <h2 id="modalMinecraft"></h2>
+          <p id="modalFullName"></p>
+
+          <div id="modalPremium"></div>
+
+          <p id="modalRole"></p>
+          <p id="modalBirth"></p>
+          <span id="modalPoints"></span>
+
+          <div id="rankingPos" class="ranking-position"></div>
+
+          <button id="copyIdBtn" class="copy-btn">Copiar ID</button>
+
+          <div id="modalBadges" class="badges"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/ranking.js"></script>
+  </body>
+</html>

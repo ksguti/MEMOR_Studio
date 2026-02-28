@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body.error-page {
+  overflow: hidden;
+}
+
+.error-404-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.error-card {
+  text-align: center;
+  padding: 60px 50px;
+  border-radius: 18px;
+
+  max-width: 520px;
+  width: 100%;
+}
+
+.error-logo {
+  max-width: 280px;
+  width: 100%;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.6));
+}
+
+.error-code {
+  font-size: clamp(4rem, 10vw, 6rem);
+  margin: 10px 0;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 6px;
+  color: var(--accent);
+  text-shadow: 0 0 30px rgba(0, 208, 255, 0.25);
+}
+
+.error-text {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.error-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .error-card {
+    padding: 40px 25px;
+  }
+  .error-logo {
+    max-width: 220px;
+  }
+}

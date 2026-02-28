@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | MEMOR Studio</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body class="login-body">
+    <div class="login-wrapper">
+      <div class="login-card">
+        <div class="tabs">
+          <button id="btnLogin" class="active">Iniciar sesión</button>
+          <button id="btnRegister">Registrarse</button>
+        </div>
+
+        <form id="loginForm" class="form active">
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Correo electrónico"
+            required
+          />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Contraseña"
+            required
+          />
+          <button type="submit" class="btn primary">Ingresar</button>
+        </form>
+
+        <form id="registerForm" class="form">
+          <input
+            type="text"
+            id="regNombre"
+            placeholder="Nombre de perfil"
+            required
+          />
+          <input type="date" id="regFecha" required />
+          <input
+            type="email"
+            id="regEmail"
+            placeholder="Correo electrónico"
+            required
+          />
+          <input
+            type="text"
+            id="regMinecraft"
+            placeholder="Usuario de Minecraft"
+            required
+          />
+          <input
+            type="password"
+            id="regPassword"
+            placeholder="Contraseña"
+            required
+          />
+          <input
+            type="password"
+            id="regPassword2"
+            placeholder="Confirmar contraseña"
+            required
+          />
+          <label class="checkbox-premium">
+            <input type="checkbox" id="regPremium" />
+            Cuenta de Minecraft Premium
+          </label>
+
+          <button type="submit" class="btn primary">
+            Crear cuenta de MEMOR
+          </button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./js/auth.js"></script>
+  </body>
+</html>

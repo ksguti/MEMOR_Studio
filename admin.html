@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Administrador | MEMOR Studio</title>
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+
+  <body>
+    <section class="admin-panel">
+      <div class="admin-topbar">
+        <div>
+          <h1 style="margin: 0">Panel de Administrador</h1>
+          <p class="hint" style="margin: 6px 0 0 0">
+            Edita perfiles, puntos e insignias. (Roles se gestionan en Super
+            Sudo)
+          </p>
+        </div>
+
+        <div class="admin-actions">
+          <button id="toProfile" class="btn primary">Volver al perfil</button>
+          <button id="toModerator" class="btn secondary">Modo moderador</button>
+          <button id="logout" class="btn danger">Cerrar sesión</button>
+        </div>
+      </div>
+
+      <div class="admin-box">
+        <label class="box-label">Buscar usuario</label>
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Buscar por FullName, Minecraft o UID"
+          class="search"
+        />
+        <div id="searchHint" class="hint">Escribe para filtrar la lista…</div>
+      </div>
+      <div id="list" class="users-list"></div>
+    </section>
+
+    <script type="module" src="js/admin.js"></script>
+  </body>
+</html>

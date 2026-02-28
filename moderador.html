@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Moderación | MEMOR Studio</title>
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/moderador.css" />
+  </head>
+
+  <body>
+    <section class="panel">
+      <header class="panel-header">
+        <h1>Panel de Moderación</h1>
+        <p>Gestión de inscripciones</p>
+
+        <div class="panel-actions">
+          <button id="btnBetas">Betas / Eventos</button>
+          <button id="btnAffiliations">Afiliados / Colaboradores</button>
+          <button id="btnAccepted">Aceptados</button>
+        </div>
+
+        <div class="admin-box">
+          <label class="box-label">Buscar usuario</label>
+          <input
+            id="searchInput"
+            type="text"
+            class="search"
+            placeholder="Buscar por FullName, Minecraft o UID"
+          />
+          <div id="searchHint" class="hint">Escribe para filtrar la lista…</div>
+        </div>
+
+        <div id="toast" class="toast"></div>
+      </header>
+
+      <div id="list"></div>
+
+      <footer class="panel-footer">
+        <button id="backProfile" class="btn primary">Volver al perfil</button>
+        <button id="logout" class="btn danger">Cerrar sesión</button>
+      </footer>
+    </section>
+
+    <script src="..."></script>
+    <script>
+      emailjs.init("...");
+    </script>
+
+    <script type="module" src="js/moderador.js"></script>
+  </body>
+</html>

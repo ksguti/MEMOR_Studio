@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Sudo | Roles | MEMOR Studio</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+
+  <body>
+    <section class="admin-panel">
+      <div class="role-topbar">
+        <div>
+          <h1 style="margin: 0">Super Sudo</h1>
+          <p class="hint" style="margin: 6px 0 0 0">
+            Gestión de roles (validación por UID + email + Discord ID)
+          </p>
+        </div>
+
+        <div class="role-actions">
+          <button id="toAdmin" class="btn secondary">Volver al admin</button>
+          <button id="toProfile" class="btn primary">Volver al perfil</button>
+          <button id="logout" class="btn danger">Cerrar sesión</button>
+        </div>
+      </div>
+
+      <div>
+        <button id="toggleRoleBox" class="btn primary">Rol</button>
+      </div>
+
+      <div id="roleBox" class="role-box">
+        <div class="role-panel">
+          <div>
+            <label style="display: block; margin-bottom: 8px; color: #9ca3af"
+              >Buscar usuario</label
+            >
+            <input
+              id="roleSearch"
+              class="search"
+              type="text"
+              placeholder="Busca por UID, Discord ID, FullName, Email o Minecraft"
+            />
+            <div class="hint">
+              Tip: UID (largo), Discord ID (numérico), Email o FullName.
+            </div>
+          </div>
+
+          <div id="results" class="result-list"></div>
+        </div>
+      </div>
+
+      <section id="bigProfile" class="big-profile">
+        <div class="big-preview">
+          <img
+            id="bigBanner"
+            class="big-banner"
+            src="img/banners/default.png"
+            alt="Banner"
+          />
+          <img
+            id="bigSkin"
+            class="big-skin"
+            src="img/skins/default.jpg"
+            alt="Skin"
+          />
+        </div>
+
+        <div class="big-content">
+          <div>
+            <h2 id="bigName">Selecciona un usuario</h2>
+
+            <div class="big-grid">
+              <div class="info-chip">
+                <small>UID</small>
+                <div id="bigUid">-</div>
+              </div>
+
+              <div class="info-chip">
+                <small>Correo</small>
+                <div id="bigEmail">-</div>
+              </div>
+
+              <div class="info-chip">
+                <small>Minecraft</small>
+                <div id="bigMinecraft">-</div>
+              </div>
+
+              <div class="info-chip">
+                <small>Discord</small>
+                <div id="bigDiscord">-</div>
+              </div>
+
+              <div class="info-chip">
+                <small>Rol actual</small>
+                <div id="bigRole">-</div>
+              </div>
+
+              <div class="info-chip">
+                <small>Premium</small>
+                <div id="bigPremium">-</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="info-chip">
+              <small>Cambiar rol</small>
+
+              <div class="role-selector" style="margin-top: 10px">
+                <select id="roleSelect">
+                  <option value="user">user</option>
+                  <option value="moderator">moderator</option>
+                  <option value="admin">admin</option>
+                </select>
+
+                <button id="saveRole" class="btn primary">Guardar rol</button>
+              </div>
+
+              <div class="hint" id="saveHint">
+                Selecciona un rol y presiona “Guardar rol”.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script type="module" src="js/rol.js"></script>
+  </body>
+</html>

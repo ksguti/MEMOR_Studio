@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Afiliados & Colaboradores | MEMOR Studio</title>
+    <link rel="icon" href="favicon.ico.png" />
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/betas.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+
+  <body class="beta-bg">
+    <div class="page-wrapper">
+      <header class="nav">
+        <div class="nav-top">
+          <div class="logo">
+            <img src="icon/iconotransp.png" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="perfil.html" class="btn primary">Perfil</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="beta-container">
+        <div class="beta-card">
+          <h1>Inscripción Afiliados & Colaboradores</h1>
+          <p class="beta-desc">
+            Postúlate para formar parte del equipo oficial de MEMOR Studio.
+          </p>
+
+          <form id="affForm">
+            <div class="field">
+              <label>Tipo de solicitud</label>
+              <select id="type" required>
+                <option value="">Selecciona</option>
+                <option value="afiliado">Afiliado</option>
+                <option value="colaborador">Colaborador</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Usuario de Discord</label>
+              <input
+                type="text"
+                id="discordUser"
+                required
+                placeholder="usuario#0000"
+              />
+            </div>
+
+            <div class="field">
+              <label>Usuario de Minecraft</label>
+              <input
+                type="text"
+                id="minecraftUser"
+                required
+                placeholder="Steve123"
+              />
+            </div>
+
+            <div class="field">
+              <label>Correo electrónico</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="field">
+              <label>Experiencia previa</label>
+              <textarea
+                id="experience"
+                required
+                placeholder="Cuéntanos tu experiencia relacionada"
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label>¿Por qué quieres unirte?</label>
+              <textarea
+                id="motivation"
+                required
+                placeholder="Motivación personal"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar solicitud</button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer">© MEMOR Studio</footer>
+    </div>
+
+    <script type="module" src="js/afiliados.js"></script>
+    <script>
+      anime({
+        targets: ".beta-card",
+        opacity: [0, 1],
+        translateY: [40, 0],
+        duration: 900,
+        easing: "easeOutExpo",
+      });
+    </script>
+  </body>
+</html>

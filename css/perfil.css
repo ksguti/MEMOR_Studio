@@ -1,0 +1,341 @@
+body {
+  font-family: Inter, system-ui;
+  background: url("../fondos/Patron BG MEMOR Web 16.9@2x.png") no-repeat
+    center/cover;
+  color: #eef2ff;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.perfil {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.profile-banner {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.55);
+}
+
+.profile-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0.3) 55%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  pointer-events: none;
+}
+
+.profile-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.perfil-card {
+  background: rgba(10, 10, 16, 0.74);
+  border-radius: 22px;
+  margin-top: -60px;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);
+}
+
+.profile-header {
+  position: relative;
+  display: flex;
+  gap: 34px;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  min-height: 170px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  margin-top: -40px;
+  flex: 0 0 auto;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 18px;
+  border: 5px solid #0b0f1a;
+  background: #0b0f1a;
+  image-rendering: pixelated;
+}
+
+.premium-badge {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 34px;
+}
+
+.profile-main-info {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: linear-gradient(right, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0));
+}
+
+.profile-main-info h2 {
+  margin: 0;
+  font-size: 1.9rem;
+  color: #eef2ff;
+  text-shadow: 0 6px 22px rgba(0, 0, 0, 0.65);
+  line-height: 1.15;
+}
+
+.mc-username {
+  opacity: 0.7;
+  margin: 4px 0 10px;
+  color: rgba(238, 242, 255, 0.78);
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
+.discord-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.perfil-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 30px 0;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.stat-box.highlight {
+  border-color: #5fd9f5;
+}
+
+.stat-box span {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.stat-box p {
+  font-size: 1.4rem;
+  margin-top: 6px;
+}
+
+.perfil-content {
+  display: grid;
+  gap: 32px;
+}
+
+.perfil-section h3 {
+  margin-bottom: 14px;
+}
+
+.meta {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.badge-card {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  justify-self: start;
+}
+
+.badge-card > img {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  object-fit: cover;
+  image-rendering: pixelated;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.badge-card:hover > img {
+  transform: translateY(-2px) scale(1.06);
+  border-color: rgba(95, 217, 245, 0.35);
+}
+
+.info-panel {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 12px);
+
+  width: 280px;
+  max-width: min(280px, 70vw);
+
+  background: rgba(18, 18, 26, 0.92);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 14px;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+
+  opacity: 0;
+  transform: translateY(8px) scale(0.98);
+  pointer-events: none;
+  transition: 0.18s ease;
+
+  z-index: 50;
+}
+
+.info-panel::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  bottom: -8px;
+  width: 14px;
+  height: 14px;
+  background: rgba(18, 18, 26, 0.92);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+}
+
+.badge-card:hover .info-panel {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.info-panel h3 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+
+.info-panel p {
+  margin: 0 0 10px 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
+
+.discord-link input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.perfil-actions {
+  margin-top: 40px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#mcNameBtn {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+#mcNameBtn:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    min-height: unset;
+  }
+
+  .avatar-wrapper {
+    margin-top: -60px;
+  }
+
+  .perfil-card {
+    margin-top: -40px;
+    padding: 26px;
+  }
+
+  .perfil-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-main-info {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.22);
+  }
+
+  .profile-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .info-panel {
+    left: 50%;
+    transform: translate(-50%, 8px) scale(0.98);
+  }
+  .badge-card:hover .info-panel {
+    transform: translate(-50%, 0) scale(1);
+  }
+  .info-panel::after {
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  .profile-banner {
+    height: 260px;
+  }
+}

@@ -1,0 +1,159 @@
+.beta-bg {
+  background: url("../fondos/Patron\ BG\ MEMOR\ Web\ 16.9@2x.png") no-repeat
+    center/cover;
+  min-height: 100vh;
+}
+
+.beta-container {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.beta-card {
+  width: 100%;
+  max-width: 620px;
+  background: rgba(20, 20, 35, 0.7);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.65);
+}
+
+.beta-card h1 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.beta-desc {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 35px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.field label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.field input,
+.field textarea {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 12px;
+  color: #fff;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.field.switch {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field.switch input {
+  display: none;
+}
+
+.field.switch span::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+.field.switch input:checked + span {
+  background: var(--accent);
+}
+
+.field.switch input:checked + span::before {
+  transform: translateX(22px);
+}
+
+.btn-submit {
+  margin-top: 25px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  color: #000;
+  background: linear-gradient(90deg, var(--accent), #4adede);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-submit:hover {
+  transform: scale(1.04);
+}
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.switch-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.switch-toggle {
+  position: relative;
+  width: 46px;
+  height: 24px;
+}
+
+.switch-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #444;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch-toggle input:checked + .slider {
+  background: linear-gradient(90deg, #facc15, #f97316);
+}
+
+.switch-toggle input:checked + .slider::before {
+  transform: translateX(22px);
+}

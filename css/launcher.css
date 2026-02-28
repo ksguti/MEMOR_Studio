@@ -1,0 +1,80 @@
+.page-wrapper {
+  width: min(var(--max-width), 92vw);
+  margin: 0 auto;
+  padding: 18px 0 36px;
+}
+
+.launcher-hero {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.45);
+  margin: 18px 0;
+}
+
+.launcher-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.launcher-logo {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.launcher-logo img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.6));
+}
+
+.launcher-title {
+  margin: 0 0 8px 0;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.12;
+}
+
+.launcher-sub {
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+  line-height: 1.55;
+}
+
+.launcher-note {
+  margin-top: 16px;
+  padding: 16px;
+  border-left: 3px solid rgba(95, 217, 245, 0.55);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+
+.launcher-note p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .launcher-grid {
+    grid-template-columns: 1fr;
+  }
+  .launcher-logo {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}

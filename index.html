@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | MEMOR Studio</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <aside class="social-sidebar">
+        <a href="https://www.youtube.com/@MEMOR_StudioMC" target="_blank"
+          ><img src="icon/youtube.svg" alt=""
+        /></a>
+        <a href=". . ." target="_blank"
+          ><img src="icon/discord.svg" alt=""
+        /></a>
+        <a href="https://x.com/Memor_Studio" target="_blank"
+          ><img src="icon/x.svg" alt=""
+        /></a>
+        <a href="https://www.tiktok.com/@memor_studio" target="_blank"
+          ><img src="icon/tiktok.svg" alt=""
+        /></a>
+      </aside>
+
+      <header id="nav" class="nav">
+        <div class="nav-top">
+          <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="logo">
+            <img src="icon/iconotransp.png" alt="Logo" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="perfil.html" class="btn primary">Ver perfil</a>
+          </div>
+        </div>
+
+        <div class="card-container" id="cardContainer" aria-hidden="true">
+          <div class="card">
+            <h3>Proyectos</h3>
+            <a href="launcher.html">➤ Launcher</a>
+            <a href="modpacks.html">➤ Modpacks</a>
+          </div>
+
+          <div class="card">
+            <h3>Acerca de MEMOR Studio</h3>
+            <a href="integrantes.html">➤ Integrantes</a>
+            <a href="colaboradores.html">➤ Colaboradores</a>
+          </div>
+
+          <div class="card">
+            <h3>Comunidad</h3>
+            <a href="discord.html">➤ Discord MEMOR Studio Club</a>
+            <a href="login.html">➤ Login / Registro</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="hero">
+          <canvas id="fondoAnimado" class="fondo-canvas"></canvas>
+
+          <div class="hero-inner">
+            <div class="hero-left reveal">
+              <h1 class="hero-title">
+                Bienvenido a <span class="accent">MEMOR Studio</span>
+              </h1>
+
+              <p class="hero-sub">
+                Eventos, comunidades y modpacks diseñados para streamers y
+                gamers.
+              </p>
+
+              <div class="hero-cta">
+                <a class="btn primary large" href="vision-mision.html"
+                  >Saber mas de MEMOR</a
+                >
+                <a class="btn ghost large" href="colaboradores.html"
+                  >Ver Afiliados</a
+                >
+              </div>
+            </div>
+
+            <div class="hero-card reveal">
+              <div class="card-card">
+                <h4>Inscribete para participar en Betas y Eventos</h4>
+                <p class="muted">
+                  Para participar necesitas estar en el discord de MEMOR Studio
+                  Club
+                </p>
+                <div class="card-actions">
+                  <a class="btn small" href="betas.html">Inscribirse</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="seccion reveal">
+        <h2 class="hero-title">
+          Proyectos Destacados de <span class="accent">MEMOR</span>
+        </h2>
+        <p class="muted">
+          Las sagas principales de MEMOR Studio: cada una tiene identidad y
+          enfoque propio.
+        </p>
+
+        <div class="grid-cards">
+          <div class="media-card reveal">
+            <img
+              data-banner="true"
+              src="img/banners/IS2 1500x500 Banner.png"
+              alt="Saga Infección Sculk"
+            />
+            <h3>Saga Infección Sculk</h3>
+            <p class="muted" style="padding: 0 14px 14px; margin: 0">
+              Supervivencia y progresión con narrativa. Retos, evolución y
+              momentos épicos.
+            </p>
+          </div>
+
+          <div class="media-card reveal">
+            <img
+              data-banner="true"
+              src="img/banners/OSD Banner 1500x500.png"
+              alt="One Shot Deathmatch"
+            />
+            <h3>One Shot Deathmatch</h3>
+            <p class="muted" style="padding: 0 14px 14px; margin: 0">
+              Arena rápida y competitiva. Perfecto para partidas intensas y
+              jugadas memorables.
+            </p>
+          </div>
+
+          <div class="media-card reveal">
+            <img data-banner="true" src="img/oneshot.png" alt="Saga One Shot" />
+            <h3>Saga One Shot</h3>
+            <p class="muted" style="padding: 0 14px 14px; margin: 0">
+              Contenido variado dentro del universo One Shot: modos, retos y
+              experiencias especiales.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion reveal">
+        <h2 class="hero-title">
+          ¿Qué ganas con tu <span class="accent">perfil?</span>
+        </h2>
+        <p class="muted">
+          Tu cuenta te permite construir un perfil público con progreso,
+          ranking, puntos e insignias.
+        </p>
+
+        <div class="grid-cards">
+          <div class="card reveal">
+            <h3>Ranking por puntos</h3>
+            <p class="muted" style="margin: 6px 0 0">
+              Acumulas puntos por participación y logros para subir de posición
+              en el ranking.
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3>Insignias</h3>
+            <p class="muted" style="margin: 6px 0 0">
+              Colecciona insignias en tu perfil y demuestra tu historial dentro
+              de MEMOR Studio.
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3>Perfil público</h3>
+            <p class="muted" style="margin: 6px 0 0">
+              Muestra tu identidad: progreso, estado, insignias, puntos y tu
+              lugar en la comunidad.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="margin-top: 14px; display: flex; gap: 12px; flex-wrap: wrap"
+        >
+          <a class="btn primary" href="login.html">Crear mi perfil</a>
+          <a
+            class="btn ghost"
+            href="https://memor-studio-web.web.app/perfil-publico.html?uid=VrR7MbGcG8MXFAi1ySozLpA5R5R2"
+            >Ver ejemplo</a
+          >
+        </div>
+      </section>
+
+      <section class="seccion reveal videos-destacados">
+        <h2 class="hero-title">
+          Videos destacados de <span class="accent">MEMOR Studio</span>
+        </h2>
+
+        <div class="video-carousel">
+          <button class="video-nav left" data-dir="-1" aria-label="Anterior">
+            <svg
+              class="nav-ico"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M15 18l-6-6 6-6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <div class="video-track" id="videoTrack">
+            <!-- 1 -->
+            <a
+              class="video-card"
+              data-id="GzaNNwAhs6k"
+              href="https://youtu.be/GzaNNwAhs6k?si=I0z6VffiAzgivRNh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.youtube.com/vi/GzaNNwAhs6k/maxresdefault.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://img.youtube.com/vi/GzaNNwAhs6k/hqdefault.jpg';
+                "
+                alt="Video 1"
+              />
+              <span class="play-btn">▶</span>
+            </a>
+
+            <!-- 2 -->
+            <a
+              class="video-card"
+              data-id="gW_yjmox2RU"
+              href="https://youtu.be/gW_yjmox2RU?si=IXoGnnGd2iwYEPAK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.youtube.com/vi/gW_yjmox2RU/maxresdefault.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://img.youtube.com/vi/gW_yjmox2RU/hqdefault.jpg';
+                "
+                alt="Video 2"
+              />
+              <span class="play-btn">▶</span>
+            </a>
+
+            <!-- 3 -->
+            <a
+              class="video-card"
+              data-id="eCu-Nhag1I4"
+              href="https://youtu.be/eCu-Nhag1I4?si=6EfSxgQfMXqv_S1g"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.youtube.com/vi/eCu-Nhag1I4/maxresdefault.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://img.youtube.com/vi/eCu-Nhag1I4/hqdefault.jpg';
+                "
+                alt="Video 3"
+              />
+              <span class="play-btn">▶</span>
+            </a>
+
+            <!-- 4 -->
+            <a
+              class="video-card"
+              data-id="eCu-Nhag1I4"
+              href="https://youtu.be/FmdAjSUdLbs?si=9bZJGMPSEVGydmpN"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.youtube.com/vi/FmdAjSUdLbs/maxresdefault.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://img.youtube.com/vi/FmdAjSUdLbs/hqdefault.jpg';
+                "
+                alt="Video 3"
+              />
+              <span class="play-btn">▶</span>
+            </a>
+
+            <!-- 5 (SHORT) -->
+            <a
+              class="video-card"
+              data-id="JcbgClOpd4Y"
+              href="https://youtube.com/shorts/JcbgClOpd4Y?si=l3YuWlJoBSIJaF2R"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.youtube.com/vi/JcbgClOpd4Y/maxresdefault.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://img.youtube.com/vi/JcbgClOpd4Y/hqdefault.jpg';
+                "
+                alt="Short 1"
+              />
+              <span class="play-btn">▶</span>
+            </a>
+
+            <!-- 6 (SHORT) -->
+            <a
+              class="video-card"
+              data-id="JcbgClOpd4Y"
+              href="https://youtube.com/shorts/wZv0pqvierw?si=JYJkWJoWus6AQ3jF"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.youtube.com/vi/wZv0pqvierw/maxresdefault.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://img.youtube.com/vi/wZv0pqvierw/hqdefault.jpg';
+                "
+                alt="Short 1"
+              />
+              <span class="play-btn">▶</span>
+            </a>
+          </div>
+
+          <button class="video-nav right" data-dir="1" aria-label="Siguiente">
+            <svg
+              class="nav-ico"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9 6l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="seccion reveal">
+        <div class="title-row">
+          <h2 class="hero-title">
+            Publicaciones de <span class="accent">MEMOR Studio</span>
+          </h2>
+          <a
+            class="btn ghost"
+            href="https://twitter.com/Memor_Studio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver en X
+          </a>
+        </div>
+
+        <div class="tweets-container" id="tweetsContainer">
+          <blockquote class="twitter-tweet" data-theme="dark">
+            <a
+              href="https://twitter.com/Memor_Studio/status/1980791506786218127"
+              >Ver publicación</a
+            >
+          </blockquote>
+
+          <blockquote class="twitter-tweet" data-theme="dark">
+            <a
+              href="https://twitter.com/Memor_Studio/status/1980865734273118321"
+              >Ver publicación</a
+            >
+          </blockquote>
+
+          <blockquote class="twitter-tweet" data-theme="dark">
+            <a
+              href="https://twitter.com/Memor_Studio/status/1981027450944475157"
+              >Ver publicación</a
+            >
+          </blockquote>
+        </div>
+      </section>
+
+      <script>
+        (function () {
+          const s = document.createElement("script");
+          s.src = "https://platform.twitter.com/widgets.js";
+          s.async = true;
+          s.charset = "utf-8";
+          s.onload = () => {
+            if (window.twttr && twttr.widgets) {
+              twttr.widgets.load(document.getElementById("tweetsContainer"));
+            }
+          };
+          document.body.appendChild(s);
+        })();
+      </script>
+
+      <footer class="footer">
+        © <span id="year"></span> MEMOR Studio — Todos los derechos reservados.
+      </footer>
+    </div>
+
+    <script type="module" src="js/firebase.js"></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Requisitos | MEMOR Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico.png" />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper" style="width: 100%; max-width: var(--max-width)">
+      <header class="nav">
+        <div class="nav-top">
+          <div class="logo">
+            <img src="icon/iconotransp.png" alt="MEMOR Studio" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="perfil.html" class="btn primary">Perfil</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="seccion reveal">
+        <h2>Programa de Afiliados</h2>
+
+        <p class="hero-sub">
+          El programa de afiliados de <strong>MEMOR Studio</strong> está
+          diseñado para creadores que desean representar y promocionar nuestros
+          proyectos de forma oficial.
+        </p>
+
+        <h3 style="margin-top: 18px">¿Qué es ser Afiliado?</h3>
+        <p class="hero-sub">
+          Un afiliado es un miembro externo que apoya a MEMOR Studio mediante
+          contenido, difusión o participación activa en la comunidad.
+        </p>
+
+        <h3 style="margin-top: 18px">¿Para qué sirve?</h3>
+        <ul style="margin-top: 12px; color: var(--muted); line-height: 1.7">
+          <li>Promocionar proyectos y eventos oficiales</li>
+          <li>Acceder a beneficios exclusivos</li>
+          <li>Reconocimiento dentro de la comunidad</li>
+        </ul>
+
+        <h3 style="margin-top: 20px">Requisitos para Afiliado</h3>
+        <ul style="margin-top: 12px; color: var(--muted); line-height: 1.7">
+          <li>Actividad constante en redes o comunidad</li>
+          <li>Buena conducta y respeto a las normas</li>
+          <li>No haber tenido sanciones graves</li>
+          <li>Compromiso con la comunidad</li>
+        </ul>
+      </section>
+
+      <div
+        class="reveal"
+        style="
+          height: 1px;
+          background: linear-gradient(
+            90deg,
+            transparent,
+            var(--accent),
+            transparent
+          );
+          margin: 40px 0;
+          opacity: 0.55;
+        "
+      ></div>
+
+      <section class="seccion reveal">
+        <h2>Programa de Colaboradores</h2>
+
+        <p class="hero-sub">
+          El programa de colaboradores está orientado a personas que desean
+          participar directamente en el desarrollo y crecimiento de MEMOR
+          Studio.
+        </p>
+
+        <h3 style="margin-top: 18px">¿Qué es ser Colaborador?</h3>
+        <p class="hero-sub">
+          Un colaborador aporta conocimientos técnicos, creativos o
+          administrativos y forma parte activa del equipo.
+        </p>
+
+        <h3 style="margin-top: 18px">¿Por qué ser Colaborador?</h3>
+        <ul style="margin-top: 12px; color: var(--muted); line-height: 1.7">
+          <li>Participar en proyectos reales</li>
+          <li>Desarrollar experiencia profesional</li>
+          <li>Trabajar con el equipo MEMOR Studio</li>
+        </ul>
+
+        <h3 style="margin-top: 20px">Requisitos para Colaborador</h3>
+        <ul style="margin-top: 12px; color: var(--muted); line-height: 1.7">
+          <li>Conocimientos comprobables y verificables</li>
+          <li>Responsabilidad y comunicación</li>
+          <li>Disponibilidad mínima</li>
+          <li>Trabajo en equipo</li>
+        </ul>
+      </section>
+
+      <section class="seccion reveal" style="text-align: center">
+        <h2>Confirmación</h2>
+
+        <label
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0 26px;
+            color: var(--muted);
+            cursor: pointer;
+            user-select: none;
+          "
+        >
+          <input
+            type="checkbox"
+            id="acceptRules"
+            style="transform: scale(1.2)"
+          />
+          He leído y acepto todos los requisitos
+        </label>
+
+        <button
+          id="applyBtn"
+          class="btn primary"
+          disabled
+          style="opacity: 0.5; cursor: not-allowed"
+        >
+          Aplicar
+        </button>
+      </section>
+
+      <footer class="footer">
+        © <span id="year"></span> MEMOR Studio — Todos los derechos reservados.
+      </footer>
+    </div>
+
+    <script src="js/main.js" defer></script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const checkbox = document.getElementById("acceptRules");
+      const btn = document.getElementById("applyBtn");
+
+      checkbox.addEventListener("change", () => {
+        const ok = checkbox.checked;
+        btn.disabled = !ok;
+        btn.style.opacity = ok ? "1" : "0.5";
+        btn.style.cursor = ok ? "pointer" : "not-allowed";
+      });
+
+      btn.addEventListener("click", () => {
+        window.location.href = "afiliados.html";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <title>Perfil | MEMOR Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/perfil.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  </head>
+  <body>
+    <div class="perfil">
+      <div class="profile-banner">
+        <img id="banner" src="img/banners/default.png" />
+      </div>
+
+      <div class="perfil-card">
+        <div class="profile-header">
+          <div class="avatar-wrapper">
+            <img id="skin" class="avatar" />
+            <img id="premiumBadge" class="premium-badge" />
+          </div>
+
+          <div class="profile-main-info">
+            <h2 id="fullName"></h2>
+
+            <div id="discord-status" class="discord-status">
+              <span id="discord-text">Verificando Discord...</span>
+            </div>
+
+            <div class="profile-actions">
+              <button id="downloadSkinBtn" class="btn ghost">
+                Descargar skin
+              </button>
+              <button id="copyUserIdBtn" class="btn ghost">Copiar ID</button>
+              <button id="mcNameBtn" class="btn ghost">
+                Nombre de MC:<span id="minecraftName"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="perfil-stats">
+          <div class="stat-box">
+            <span>Puntos</span>
+            <p id="points"></p>
+          </div>
+
+          <div class="stat-box highlight">
+            <span>Ranking</span>
+            <p id="rankingPos"></p>
+          </div>
+
+          <div class="stat-box">
+            <span>Warns</span>
+            <p id="warns"></p>
+          </div>
+        </div>
+
+        <div class="perfil-content">
+          <section class="perfil-section">
+            <h3>Información del jugador</h3>
+            <div class="meta">
+              <span>🎂 <strong id="birthDate"></strong></span>
+              <span>🛡️ <strong id="userRole"></strong></span>
+            </div>
+          </section>
+
+          <section class="perfil-section">
+            <h3>Insignias</h3>
+            <div class="badges"></div>
+          </section>
+
+          <section class="perfil-section discord-link">
+            <h3>Discord</h3>
+
+            <div id="discord-link-form">
+              <input id="discordCode" placeholder="Código de vinculación" />
+              <button id="linkDiscordBtn" class="btn primary">
+                Vincular Discord
+              </button>
+            </div>
+
+            <div id="discord-linked" style="display: none">
+              <p id="discordStatus"></p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="perfil-actions">
+        <button id="homeBtn" class="btn-large btn-outline">
+          Volver al inicio
+        </button>
+        <button id="logoutBtn" class="btn danger">Cerrar sesión</button>
+        <button onclick="location.href = 'ranking.html'" class="btn primary">
+          Ver Ranking
+        </button>
+        <button id="adminBtn" class="btn primary" style="display: none">
+          Modo Administrador
+        </button>
+        <button id="modBtn" class="btn primary" style="display: none">
+          Modo Moderador
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="js/perfil.js"></script>
+
+    <script>
+      anime({
+        targets: ".perfil-card",
+        opacity: [0, 1],
+        translateY: [30, 0],
+        duration: 800,
+        easing: "easeOutExpo",
+      });
+    </script>
+  </body>
+</html>

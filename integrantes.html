@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Integrantes Oficiales | MEMOR Studio</title>
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/integrantes.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/integrantes.js" defer></script>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <aside class="social-sidebar">
+        <a
+          href="https://www.youtube.com/@MEMOR_StudioMC"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="icon/youtube.svg" alt="YouTube" />
+        </a>
+        <a href=".." target="_blank" rel="noopener">
+          <img src="icon/discord.svg" alt="Discord" />
+        </a>
+        <a href="https://x.com/Memor_Studio" target="_blank" rel="noopener">
+          <img src="icon/x.svg" alt="X" />
+        </a>
+        <a
+          href="https://www.tiktok.com/@memor_studio"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="icon/tiktok.svg" alt="TikTok" />
+        </a>
+      </aside>
+
+      <header id="nav" class="nav">
+        <div class="nav-top">
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="logo">
+            <img src="icon/iconotransp.png" alt="Logo" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="login.html" class="btn primary">Ver perfil</a>
+          </div>
+        </div>
+
+        <div class="card-container" id="cardContainer" aria-hidden="true">
+          <div class="card">
+            <h3>Proyectos</h3>
+            <a href="launcher.html">➤ Launcher</a>
+            <a href="modpacks.html">➤ Modpacks</a>
+          </div>
+
+          <div class="card">
+            <h3>Acerca de MEMOR Studio</h3>
+            <a href="integrantes.html">➤ Integrantes</a>
+            <a href="colaboradores.html">➤ Colaboradores</a>
+          </div>
+
+          <div class="card">
+            <h3>Comunidad</h3>
+            <a href="discord.html">➤ Discord MEMOR Studio Club</a>
+            <a href="login.html">➤ Login / Registro</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="stats-section reveal">
+        <div class="stats-text">
+          <h2>El Corazón de MEMOR Studio</h2>
+          <p>
+            Nuestro equipo está formado por desarrolladores apasionados que han
+            dedicado años a perfeccionar sus habilidades.
+          </p>
+          <p>
+            Cada integrante aporta su experiencia única, desde desarrollo
+            backend hasta diseño visual, creando un ambiente de creatividad
+            pura.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>+ 1</h3>
+            <span>Años de experiencia</span>
+          </div>
+          <div class="stat-item">
+            <h3>+ 3</h3>
+            <span>Proyectos completados</span>
+          </div>
+          <div class="stat-item">
+            <h3>3</h3>
+            <span>Miembros ayudados</span>
+          </div>
+          <div class="stat-item">
+            <h3>1-6 PM</h3>
+            <span>Soporte activo</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="team-header reveal">
+        <h1>Miembros de MEMOR Studio</h1>
+        <p>Conoce a los miembros oficiales</p>
+      </div>
+
+      <section
+        class="carousel-container reveal"
+        aria-label="Carrusel de integrantes"
+      >
+        <div class="carousel-slide" id="carouselSlide">
+          <div class="slide">
+            <img src="fondos/Evander Profile Website@4x.webp" alt="Evander" />
+          </div>
+          <div class="slide">
+            <img src="fondos/Luisvic Profile Website@4x.webp" alt="Luisvic" />
+          </div>
+          <div class="slide">
+            <img src="fondos/Roma Profile Website@4x.webp" alt="Roma" />
+          </div>
+          <div class="slide">
+            <img src="fondos/Rseg85 Profile Website@4x.webp" alt="Rseg85" />
+          </div>
+          <div class="slide">
+            <img src="fondos/Samicowi Profile Website@4x.webp" alt="Samicowi" />
+          </div>
+        </div>
+
+        <button class="prev" id="prevBtn" aria-label="Anterior">
+          &#10094;
+        </button>
+        <button class="next" id="nextBtn" aria-label="Siguiente">
+          &#10095;
+        </button>
+
+        <div class="dots" id="dots"></div>
+      </section>
+
+      <footer class="footer">
+        © <span id="year"></span> MEMOR Studio — Todos los derechos reservados.
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

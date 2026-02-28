@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="favicon.ico.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launcher Oficial | MEMOR Studio</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/launcher.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <aside class="social-sidebar">
+        <a href="https://www.youtube.com/@MEMOR_StudioMC" target="_blank"
+          ><img src="icon/youtube.svg" alt=""
+        /></a>
+        <a href="..." target="_blank"
+          ><img src="icon/discord.svg" alt=""
+        /></a>
+        <a href="https://x.com/Memor_Studio" target="_blank"
+          ><img src="icon/x.svg" alt=""
+        /></a>
+        <a href="https://www.tiktok.com/@memor_studio" target="_blank"
+          ><img src="icon/tiktok.svg" alt=""
+        /></a>
+      </aside>
+
+      <header id="nav" class="nav">
+        <div class="nav-top">
+          <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="logo">
+            <img src="icon/iconotransp.png" alt="Logo" />
+            <strong>MEMOR<br />Studio</strong>
+          </div>
+
+          <div class="nav-actions">
+            <a href="index.html" class="btn ghost">Inicio</a>
+            <a href="perfil.html" class="btn primary">Ver perfil</a>
+          </div>
+        </div>
+
+        <div class="card-container" id="cardContainer">
+          <div class="card">
+            <h3>Proyectos</h3>
+            <a href="launcher.html">➤ Launcher</a>
+            <a href="modpacks.html">➤ Modpacks</a>
+          </div>
+
+          <div class="card">
+            <h3>Acerca de MEMOR Studio</h3>
+            <a href="integrantes.html">➤ Integrantes</a>
+            <a href="colaboradores.html">➤ Colaboradores</a>
+          </div>
+
+          <div class="card">
+            <h3>Comunidad</h3>
+            <a href="discord.html">➤ Discord MEMOR Studio Club</a>
+            <a href="login.html">➤ Login / Registro</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="launcher-hero reveal">
+        <div class="launcher-grid">
+          <div class="launcher-logo reveal">
+            <img
+              src="img/Logo MEMOR Studio4x.png"
+              alt="Launcher MEMOR Studio"
+            />
+          </div>
+
+          <div class="launcher-text reveal">
+            <h1 class="launcher-title">Launcher Oficial de MEMOR Studio</h1>
+
+            <p class="launcher-sub">
+              Estamos trabajando en el desarrollo de un launcher oficial que
+              unificará nuestros proyectos, modpacks y experiencias en un solo
+              lugar.
+            </p>
+
+            <div class="launcher-note">
+              <p>
+                Actualmente, nuestro enfoque principal está en finalizar y
+                potenciar los proyectos activos de MEMOR Studio. El launcher se
+                encuentra en fase de desarrollo y evolucionará progresivamente
+                junto con la comunidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion reveal">
+        <h2>Estado actual</h2>
+        <p class="muted" style="line-height: 1.6; max-width: 85ch">
+          El launcher oficial de MEMOR Studio está en desarrollo temprano. Con
+          el tiempo, integrará funcionalidades como gestión de modpacks, acceso
+          directo a servidores, actualizaciones automáticas y contenido
+          exclusivo para la comunidad.
+        </p>
+      </section>
+
+      <section class="seccion reveal">
+        <h2>Enfoque actual</h2>
+        <p class="muted" style="line-height: 1.6; max-width: 85ch">
+          Por el momento, MEMOR Studio está concentrado en consolidar sus
+          proyectos, eventos y experiencias existentes. A medida que estos se
+          estabilicen, el launcher se irá desarrollando como una pieza clave del
+          ecosistema MEMOR.
+        </p>
+      </section>
+
+      <footer class="footer">
+        © <span id="year"></span> MEMOR Studio — Todos los derechos reservados.
+      </footer>
+    </div>
+
+    <script type="module" src="js/firebase.js"></script>
+  </body>
+</html>
