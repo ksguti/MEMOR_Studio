@@ -44,7 +44,7 @@ Nos especializamos en **transformar ideas en mundos jugables**, creando comunida
 
 ---
 
-## 🖼️ Proyecto actual 
+## 🖼️ Proyecto en desarrollo
 
 ![MEMOR Studio galeria 1](img/banners/Presentacion_01.gif)
 
